@@ -20,8 +20,6 @@
 <script>
 
     function ArtConfirmados() {
-        
-    alert(document.querySelectorAll('input[name="articulos"]').length);
 
     artConfirmados = 
         Array.from(document.querySelectorAll('input[name="articulos"]'))
@@ -30,11 +28,8 @@
 
         return artConfirmados.length;
     }
-    
     const resultEl = document.getElementById('result');
-    
     document.getElementById('verResultado').addEventListener('click', () => {
       resultEl.innerHTML = ArtConfirmados();
     });
-    
     </script>
