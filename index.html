@@ -23,11 +23,12 @@
         
     alert(document.querySelectorAll('input[name="articulos"]').length);
 
-    artConfirmados = Array.from(document.querySelectorAll('input[name="articulos"]'))
-      .filter((checkbox) => checkbox.checked)
-      .map((checkbox) => checkbox.value);
+    artConfirmados = 
+        Array.from(document.querySelectorAll('input[name="articulos"]'))
+            .filter((checkbox) => checkbox.checked)
+            .map((checkbox) => checkbox.value);
 
-      return artConfirmados.length;
+        return artConfirmados.length;
     }
     
     const resultEl = document.getElementById('result');
